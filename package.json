@@ -1,6 +1,6 @@
 {
   "name": "choreographic",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Simple framework for single-run scripts.",
   "main": "source/choreographic.js",
   "scripts": {
@@ -42,7 +42,6 @@
     "@babel/core": "^7.17.9",
     "@babel/preset-env": "^7.16.11",
     "@testing-library/dom": "^8.13.0",
-    "async": "^3.2.4",
     "browserify": "^17.0.0",
     "chai": "4.3.6",
     "gulp": "^4.0.2",
@@ -60,6 +59,7 @@
   },
   "dependencies": {
     "elucidator": "^1.0.2",
+    "async": "^3.2.4",
     "fable": "^2.0.5",
     "fs-extra": "^11.1.0",
     "node-schedule": "^2.1.1",
