@@ -7,9 +7,7 @@ let _ScriptHost = new libChoreographic(
 
 _ScriptHost.logMemoryResourcesUsed();
 
-let libAsync = _ScriptHost._Dependencies.async;
-
-libAsync.waterfall(
+_ScriptHost.fable.Utility.waterfall(
     [
         (fStageComplete) =>
         {

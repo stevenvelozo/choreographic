@@ -1,14 +1,17 @@
 {
   "name": "choreographic",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Simple framework for single-run scripts.",
   "main": "source/choreographic.js",
   "scripts": {
     "docker-dev-build-image": "docker build ./ -f Dockerfile_LUXURYCode -t retold/choreographic:local",
     "docker-dev-run": "docker run -it -d --name choreographic -p 12340:8080 -v \"$PWD/.config:/home/coder/.config\"  -v \"$PWD:/home/coder/choreographic\" -u \"$(id -u):$(id -g)\" -e \"DOCKER_USER=$USER\" retold/choreographic:local",
-    "test": "./node_modules/mocha/bin/_mocha -u tdd -R spec",
-    "tests": "./node_modules/mocha/bin/_mocha -u tdd -R spec --grep",
-    "coverage": "nyc npm run test && nyc report --reporter=lcov"
+    "harness": "node debug/Harness.js",
+    "killharness": "debug/KillHarness.sh",
+    "coverage": "./node_modules/.bin/nyc --reporter=lcov --reporter=text-lcov ./node_modules/mocha/bin/_mocha -- -u tdd -R spec",
+    "test": "./node_modules/.bin/mocha --exit -u tdd -R spec",
+    "tests": "./node_modules/.bin/mocha -u tdd --exit -R spec --grep",
+    "build": "./node_modules/.bin/gulp build"
   },
   "repository": {
     "type": "git",
@@ -39,31 +42,22 @@
     ]
   },
   "devDependencies": {
-    "@babel/core": "^7.17.9",
-    "@babel/preset-env": "^7.16.11",
-    "@testing-library/dom": "^8.13.0",
     "browserify": "^17.0.0",
-    "chai": "4.3.6",
+    "chai": "4.3.7",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
-    "gulp-buble": "^0.9.0",
     "gulp-sourcemaps": "^3.0.0",
     "gulp-terser": "^2.1.0",
     "gulp-util": "^3.0.8",
-    "jsdom": "^19.0.0",
-    "mocha": "9.2.2",
-    "npm-check-updates": "^12.5.9",
+    "mocha": "10.2.0",
+    "mysql2": "^3.1.2",
     "nyc": "^15.1.0",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0"
   },
   "dependencies": {
-    "elucidator": "^1.0.2",
-    "async": "^3.2.4",
-    "fable": "^2.0.5",
-    "fs-extra": "^11.1.0",
-    "node-schedule": "^2.1.1",
-    "precedent": "^1.0.6"
+    "fable": "^3.0.11",
+    "node-schedule": "^2.1.1"
   },
   "author": "steven velozo <steven@velozo.com>",
   "license": "MIT",

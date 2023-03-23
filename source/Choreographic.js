@@ -21,8 +21,7 @@
 
  */
 
-const libFS = require('fs-extra');
-const libAsync = require('async');
+const libFS = require('fs');
 
 // This expects either a config object or a string that points to a file.
 class Choreographic
@@ -34,7 +33,6 @@ class Choreographic
 
 		this._Dependencies = (
 			{
-				async: libAsync,
 				fs: libFS
 			});
 
@@ -155,22 +153,16 @@ class Choreographic
 		}
 		// Add a log file for this run, in the run specific data folder.
 		this.settings.LogStreams.push(
+			// Because the simpleflatfile log stream writes to console and file, we are good!
 			{
 				"level": "trace",
-				"streamtype": "prettystream"
-			},
-			{
-				"level": "trace",
+				"streamtype": "simpleflatfile",
 				"path": `${this.settings.App.DataFolder}/${this.settings.App.RunID}.log`
 			});
 
-		// Do we need an orator for every script?
-		// Maybe not but it's nice to be able to create one if needed.
-		// And it isn't hugely expensive.
-		// No we don't.
-		this.webServer = require('fable').new(this.settings);
+		this.fable = require('fable').new(this.settings);
 
-		this.log = this.webServer.log;
+		this.log = this.fable.log;
 
 		this.log.info(`Starting up script host [${this.settings.App.DataFolder}/${this.settings.App.RunID}.log] for ${this.settings.App.Hash}...`);
 	}
