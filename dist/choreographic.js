@@ -2257,7 +2257,7 @@
               // Because the simpleflatfile log stream writes to console and file, we are good!
               {
                 "level": "trace",
-                "streamtype": "simpleflatfile",
+                "loggertype": "simpleflatfile",
                 "path": `${this.settings.App.DataFolder}/${this.settings.App.RunID}.log`
               });
               this.fable = require('fable').new(this.settings);

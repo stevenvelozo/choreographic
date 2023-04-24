@@ -1,8 +1,8 @@
 {
   "name": "choreographic",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Simple framework for single-run scripts.",
-  "main": "source/choreographic.js",
+  "main": "source/Choreographic.js",
   "scripts": {
     "docker-dev-build-image": "docker build ./ -f Dockerfile_LUXURYCode -t retold/choreographic:local",
     "docker-dev-run": "docker run -it -d --name choreographic -p 12340:8080 -v \"$PWD/.config:/home/coder/.config\"  -v \"$PWD:/home/coder/choreographic\" -u \"$(id -u):$(id -g)\" -e \"DOCKER_USER=$USER\" retold/choreographic:local",
