@@ -1,6 +1,6 @@
 {
   "name": "choreographic",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Simple framework for single-run scripts.",
   "main": "source/Choreographic.js",
   "scripts": {
