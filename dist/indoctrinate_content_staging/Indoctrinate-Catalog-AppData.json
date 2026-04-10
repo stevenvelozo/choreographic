@@ -4,7 +4,7 @@
     ],
     "SourceContentCatalog": {
         "URI~CONTENT~FILE://Users/steven/Code/retold/modules/utility/choreographic/.config/code-server/config.yaml": {
-            "UUID": "fd48bd24-cfb4-42a7-bdcb-ee6d992cadb7",
+            "UUID": "57d57393-fc13-43fd-ba02-501807b2e78d",
             "Type": "URI",
             "Hash": "URI~CONTENT~FILE://Users/steven/Code/retold/modules/utility/choreographic/.config/code-server/config.yaml",
             "Path": "FILE://Users/steven/Code/retold/modules/utility/choreographic/.config/code-server/config.yaml",
@@ -42,7 +42,7 @@
             }
         },
         "URI~CONTENT~FILE://Users/steven/Code/retold/modules/utility/choreographic/.config/configstore/update-notifier-npm-check-updates.json": {
-            "UUID": "88aade38-0445-4fb0-b58e-926392630188",
+            "UUID": "2b9ae73e-9d46-4c55-9821-7d2cbf770111",
             "Type": "URI",
             "Hash": "URI~CONTENT~FILE://Users/steven/Code/retold/modules/utility/choreographic/.config/configstore/update-notifier-npm-check-updates.json",
             "Path": "FILE://Users/steven/Code/retold/modules/utility/choreographic/.config/configstore/update-notifier-npm-check-updates.json",
@@ -84,7 +84,7 @@
             }
         },
         "URI~CONTENT~FILE://Users/steven/Code/retold/modules/utility/choreographic/.config/configstore/update-notifier-npm.json": {
-            "UUID": "186bc279-5c7c-4a1c-b7b2-caea40ed6d53",
+            "UUID": "fce0be7e-9f04-4dfb-9821-006f2c57b452",
             "Type": "URI",
             "Hash": "URI~CONTENT~FILE://Users/steven/Code/retold/modules/utility/choreographic/.config/configstore/update-notifier-npm.json",
             "Path": "FILE://Users/steven/Code/retold/modules/utility/choreographic/.config/configstore/update-notifier-npm.json",
@@ -124,7 +124,7 @@
             }
         },
         "URI~CONTENT~FILE://Users/steven/Code/retold/modules/utility/choreographic/.gitignore": {
-            "UUID": "96a2fed9-d309-4264-bd16-34813616b4c3",
+            "UUID": "797ba21a-0eed-4078-866f-36b2982d1d10",
             "Type": "URI",
             "Hash": "URI~CONTENT~FILE://Users/steven/Code/retold/modules/utility/choreographic/.gitignore",
             "Path": "FILE://Users/steven/Code/retold/modules/utility/choreographic/.gitignore",
@@ -159,7 +159,7 @@
             }
         },
         "URI~CONTENT~FILE://Users/steven/Code/retold/modules/utility/choreographic/.vscode/launch.json": {
-            "UUID": "c266c5ba-4538-4b6d-8bfb-0e8e3d816972",
+            "UUID": "30f8eb58-37a9-49c3-9f06-a4c88ccbbc16",
             "Type": "URI",
             "Hash": "URI~CONTENT~FILE://Users/steven/Code/retold/modules/utility/choreographic/.vscode/launch.json",
             "Path": "FILE://Users/steven/Code/retold/modules/utility/choreographic/.vscode/launch.json",
@@ -196,7 +196,7 @@
             }
         },
         "URI~CONTENT~FILE://Users/steven/Code/retold/modules/utility/choreographic/Dockerfile_LUXURYCode": {
-            "UUID": "bb624a59-55dc-4463-92a4-0b6e6e99e241",
+            "UUID": "2c994899-d491-446b-953e-6ff27b3ed747",
             "Type": "URI",
             "Hash": "URI~CONTENT~FILE://Users/steven/Code/retold/modules/utility/choreographic/Dockerfile_LUXURYCode",
             "Path": "FILE://Users/steven/Code/retold/modules/utility/choreographic/Dockerfile_LUXURYCode",
@@ -233,7 +233,7 @@
             }
         },
         "URI~CONTENT~FILE://Users/steven/Code/retold/modules/utility/choreographic/LICENSE": {
-            "UUID": "b267efef-1dd9-4518-ac82-4f315f5ff62d",
+            "UUID": "52b0529a-288c-49fa-90f5-05ee12c97796",
             "Type": "URI",
             "Hash": "URI~CONTENT~FILE://Users/steven/Code/retold/modules/utility/choreographic/LICENSE",
             "Path": "FILE://Users/steven/Code/retold/modules/utility/choreographic/LICENSE",
@@ -269,7 +269,7 @@
             }
         },
         "URI~CONTENT~FILE://Users/steven/Code/retold/modules/utility/choreographic/README.md": {
-            "UUID": "84322362-9b47-4386-a724-9524d502edf0",
+            "UUID": "c1527260-9375-4f9b-8a57-f682ca3b59f2",
             "Type": "URI",
             "Hash": "URI~CONTENT~FILE://Users/steven/Code/retold/modules/utility/choreographic/README.md",
             "Path": "FILE://Users/steven/Code/retold/modules/utility/choreographic/README.md",
@@ -305,7 +305,7 @@
             }
         },
         "URI~CONTENT~FILE://Users/steven/Code/retold/modules/utility/choreographic/debug/Harness.js": {
-            "UUID": "aca29189-9cc6-4f55-992b-f053eb8352a0",
+            "UUID": "4c50ac98-21c9-48b4-92f9-03fcbbcb2d72",
             "Type": "URI",
             "Hash": "URI~CONTENT~FILE://Users/steven/Code/retold/modules/utility/choreographic/debug/Harness.js",
             "Path": "FILE://Users/steven/Code/retold/modules/utility/choreographic/debug/Harness.js",
@@ -342,7 +342,7 @@
             }
         },
         "URI~CONTENT~FILE://Users/steven/Code/retold/modules/utility/choreographic/dist/choreographic.js": {
-            "UUID": "295e3c5c-f95c-4b6b-ade5-e31a103eec3b",
+            "UUID": "71ddf81a-a516-4131-ab94-dfd807935daf",
             "Type": "URI",
             "Hash": "URI~CONTENT~FILE://Users/steven/Code/retold/modules/utility/choreographic/dist/choreographic.js",
             "Path": "FILE://Users/steven/Code/retold/modules/utility/choreographic/dist/choreographic.js",
@@ -379,7 +379,7 @@
             }
         },
         "URI~CONTENT~FILE://Users/steven/Code/retold/modules/utility/choreographic/dist/choreographic.min.js": {
-            "UUID": "25f77737-ba94-4afa-8dbe-74d03b010590",
+            "UUID": "dada9eaf-a61b-4cd5-a31c-77d89d2eafc6",
             "Type": "URI",
             "Hash": "URI~CONTENT~FILE://Users/steven/Code/retold/modules/utility/choreographic/dist/choreographic.min.js",
             "Path": "FILE://Users/steven/Code/retold/modules/utility/choreographic/dist/choreographic.min.js",
@@ -417,7 +417,7 @@
             }
         },
         "URI~CONTENT~FILE://Users/steven/Code/retold/modules/utility/choreographic/dist/choreographic.min.js.map": {
-            "UUID": "d1a1e3bc-762a-4117-9296-bfce85767694",
+            "UUID": "45dd48de-8ad0-4eba-a9bd-e1a2510f5247",
             "Type": "URI",
             "Hash": "URI~CONTENT~FILE://Users/steven/Code/retold/modules/utility/choreographic/dist/choreographic.min.js.map",
             "Path": "FILE://Users/steven/Code/retold/modules/utility/choreographic/dist/choreographic.min.js.map",
@@ -456,7 +456,7 @@
             }
         },
         "URI~CONTENT~FILE://Users/steven/Code/retold/modules/utility/choreographic/dist/indoctrinate_content_staging/Indoctrinate-Catalog-AppData.json": {
-            "UUID": "036f9dc4-a54b-4666-ab77-cff283f8dab3",
+            "UUID": "163d2ea5-2b74-4d53-ae3f-f64bd56ff067",
             "Type": "URI",
             "Hash": "URI~CONTENT~FILE://Users/steven/Code/retold/modules/utility/choreographic/dist/indoctrinate_content_staging/Indoctrinate-Catalog-AppData.json",
             "Path": "FILE://Users/steven/Code/retold/modules/utility/choreographic/dist/indoctrinate_content_staging/Indoctrinate-Catalog-AppData.json",
@@ -490,13 +490,123 @@
             "FSTAT": {
                 "Size": 514,
                 "Created": "2026-04-09T23:24:23.674Z",
-                "Modified": "2026-04-09T23:24:23.885Z",
-                "Accessed": "2026-04-09T23:24:23.674Z",
+                "Modified": "2026-04-10T01:50:32.129Z",
+                "Accessed": "2026-04-09T23:28:39.051Z",
+                "Mode": 33188
+            }
+        },
+        "URI~CONTENT~FILE://Users/steven/Code/retold/modules/utility/choreographic/docs/.nojekyll": {
+            "UUID": "6f21c59c-78da-4668-94a3-fd6a31fc1a59",
+            "Type": "URI",
+            "Hash": "URI~CONTENT~FILE://Users/steven/Code/retold/modules/utility/choreographic/docs/.nojekyll",
+            "Path": "FILE://Users/steven/Code/retold/modules/utility/choreographic/docs/.nojekyll",
+            "Location": "/Users/steven/Code/retold/modules/utility/choreographic/docs",
+            "Name": ".nojekyll",
+            "MimeType": null,
+            "Nature": "UNKNOWN",
+            "Format": "UNKNOWN",
+            "Schema": "Default",
+            "Content": false,
+            "Labels": [
+                "__LABELSET_TYPE",
+                "FILE",
+                "__LABELSET_ADDRESS",
+                "docs",
+                "__LABELSET_NAME",
+                "__LABELSET_EXTENSION",
+                "",
+                "__LABELSET_FILENAME",
+                ".nojekyll",
+                "__LABELSET_FULLPATH",
+                "FILE://Users/steven/Code/retold/modules/utility/choreographic/docs/.nojekyll",
+                "__LABELSET_FORMAT",
+                "UNKNOWN",
+                "Default"
+            ],
+            "FSTAT": {
+                "Created": "2026-04-09T23:24:23.940Z",
+                "Modified": "2026-04-09T23:24:23.948Z",
+                "Accessed": "2026-04-09T23:24:23.940Z",
+                "Mode": 33188
+            }
+        },
+        "URI~CONTENT~FILE://Users/steven/Code/retold/modules/utility/choreographic/docs/css/docuserve.css": {
+            "UUID": "96929c27-299c-4b38-ab38-e68d3c383b03",
+            "Type": "URI",
+            "Hash": "URI~CONTENT~FILE://Users/steven/Code/retold/modules/utility/choreographic/docs/css/docuserve.css",
+            "Path": "FILE://Users/steven/Code/retold/modules/utility/choreographic/docs/css/docuserve.css",
+            "Location": "/Users/steven/Code/retold/modules/utility/choreographic/docs/css",
+            "Name": "docuserve.css",
+            "MimeType": "text/css",
+            "Nature": "text",
+            "Format": "css",
+            "Schema": "Default",
+            "Content": false,
+            "Labels": [
+                "__LABELSET_TYPE",
+                "FILE",
+                "__LABELSET_ADDRESS",
+                "docs",
+                "css",
+                "__LABELSET_NAME",
+                "docuserve",
+                "__LABELSET_EXTENSION",
+                ".css",
+                "__LABELSET_FILENAME",
+                "docuserve.css",
+                "__LABELSET_FULLPATH",
+                "FILE://Users/steven/Code/retold/modules/utility/choreographic/docs/css/docuserve.css",
+                "__LABELSET_FORMAT",
+                "css",
+                "Default"
+            ],
+            "FSTAT": {
+                "Size": 1263,
+                "Created": "2026-03-10T18:01:03.404Z",
+                "Modified": "2026-04-09T23:24:23.942Z",
+                "Accessed": "2026-04-09T23:28:39.064Z",
+                "Mode": 33188
+            }
+        },
+        "URI~CONTENT~FILE://Users/steven/Code/retold/modules/utility/choreographic/docs/index.html": {
+            "UUID": "b99f1549-3274-46bd-8b24-3bbabbb22761",
+            "Type": "URI",
+            "Hash": "URI~CONTENT~FILE://Users/steven/Code/retold/modules/utility/choreographic/docs/index.html",
+            "Path": "FILE://Users/steven/Code/retold/modules/utility/choreographic/docs/index.html",
+            "Location": "/Users/steven/Code/retold/modules/utility/choreographic/docs",
+            "Name": "index.html",
+            "MimeType": "text/html",
+            "Nature": "text",
+            "Format": "html",
+            "Schema": "Default",
+            "Content": false,
+            "Labels": [
+                "__LABELSET_TYPE",
+                "FILE",
+                "__LABELSET_ADDRESS",
+                "docs",
+                "__LABELSET_NAME",
+                "index",
+                "__LABELSET_EXTENSION",
+                ".html",
+                "__LABELSET_FILENAME",
+                "index.html",
+                "__LABELSET_FULLPATH",
+                "FILE://Users/steven/Code/retold/modules/utility/choreographic/docs/index.html",
+                "__LABELSET_FORMAT",
+                "html",
+                "Default"
+            ],
+            "FSTAT": {
+                "Size": 1652,
+                "Created": "2026-03-10T18:01:03.421Z",
+                "Modified": "2026-04-09T23:24:23.942Z",
+                "Accessed": "2026-04-09T23:28:39.064Z",
                 "Mode": 33188
             }
         },
         "URI~CONTENT~FILE://Users/steven/Code/retold/modules/utility/choreographic/docs/retold-catalog.json": {
-            "UUID": "68c2ea96-e9c0-453b-8718-ce83c126644f",
+            "UUID": "3a40a9e2-3f5f-4ace-9619-dd6fa50bed93",
             "Type": "URI",
             "Hash": "URI~CONTENT~FILE://Users/steven/Code/retold/modules/utility/choreographic/docs/retold-catalog.json",
             "Path": "FILE://Users/steven/Code/retold/modules/utility/choreographic/docs/retold-catalog.json",
@@ -526,15 +636,54 @@
                 "Default"
             ],
             "FSTAT": {
-                "Size": 949,
+                "Size": 1255,
                 "Created": "2026-04-09T23:24:23.684Z",
-                "Modified": "2026-04-09T23:24:23.684Z",
-                "Accessed": "2026-04-09T23:24:23.684Z",
+                "Modified": "2026-04-10T01:50:31.928Z",
+                "Accessed": "2026-04-09T23:28:39.064Z",
+                "Mode": 33188
+            }
+        },
+        "URI~CONTENT~FILE://Users/steven/Code/retold/modules/utility/choreographic/docs/retold-keyword-index.json": {
+            "UUID": "67b1d01d-fcf6-4ab6-929d-fa254faff5cd",
+            "Type": "URI",
+            "Hash": "URI~CONTENT~FILE://Users/steven/Code/retold/modules/utility/choreographic/docs/retold-keyword-index.json",
+            "Path": "FILE://Users/steven/Code/retold/modules/utility/choreographic/docs/retold-keyword-index.json",
+            "Location": "/Users/steven/Code/retold/modules/utility/choreographic/docs",
+            "Name": "retold-keyword-index.json",
+            "MimeType": "application/json",
+            "Nature": "application",
+            "Format": "json",
+            "Schema": "Default",
+            "Content": false,
+            "Labels": [
+                "__LABELSET_TYPE",
+                "FILE",
+                "__LABELSET_ADDRESS",
+                "docs",
+                "__LABELSET_NAME",
+                "retold",
+                "keyword",
+                "index",
+                "__LABELSET_EXTENSION",
+                ".json",
+                "__LABELSET_FILENAME",
+                "retold-keyword-index.json",
+                "__LABELSET_FULLPATH",
+                "FILE://Users/steven/Code/retold/modules/utility/choreographic/docs/retold-keyword-index.json",
+                "__LABELSET_FORMAT",
+                "json",
+                "Default"
+            ],
+            "FSTAT": {
+                "Size": 269,
+                "Created": "2026-04-09T23:24:23.890Z",
+                "Modified": "2026-04-09T23:24:23.890Z",
+                "Accessed": "2026-04-09T23:28:39.064Z",
                 "Mode": 33188
             }
         },
         "URI~CONTENT~FILE://Users/steven/Code/retold/modules/utility/choreographic/gulpfile.js": {
-            "UUID": "26a6eb4f-71a4-45dd-a351-e9ccdb7680f4",
+            "UUID": "b0274b53-4ab0-4efd-ad88-ec41b8609aea",
             "Type": "URI",
             "Hash": "URI~CONTENT~FILE://Users/steven/Code/retold/modules/utility/choreographic/gulpfile.js",
             "Path": "FILE://Users/steven/Code/retold/modules/utility/choreographic/gulpfile.js",
@@ -570,7 +719,7 @@
             }
         },
         "URI~CONTENT~FILE://Users/steven/Code/retold/modules/utility/choreographic/package-lock.json": {
-            "UUID": "0eaa95db-0238-40a4-ab00-5809f0df6a04",
+            "UUID": "3c69b725-3555-410e-a1f0-73e2d5f64a0a",
             "Type": "URI",
             "Hash": "URI~CONTENT~FILE://Users/steven/Code/retold/modules/utility/choreographic/package-lock.json",
             "Path": "FILE://Users/steven/Code/retold/modules/utility/choreographic/package-lock.json",
@@ -607,7 +756,7 @@
             }
         },
         "URI~CONTENT~FILE://Users/steven/Code/retold/modules/utility/choreographic/package.json": {
-            "UUID": "d108479a-3250-4c34-b54f-c318d75ed7d0",
+            "UUID": "a4bd9257-bf41-4100-bcfe-2792ffadd451",
             "Type": "URI",
             "Hash": "URI~CONTENT~FILE://Users/steven/Code/retold/modules/utility/choreographic/package.json",
             "Path": "FILE://Users/steven/Code/retold/modules/utility/choreographic/package.json",
@@ -710,7 +859,7 @@
             }
         },
         "URI~CONTENT~FILE://Users/steven/Code/retold/modules/utility/choreographic/source/Choreographic-Browser-Shim.js": {
-            "UUID": "8f6ed000-f39a-4435-9c73-94a8ace1ebf8",
+            "UUID": "98c047b2-13e3-46d7-9a17-f09a60def757",
             "Type": "URI",
             "Hash": "URI~CONTENT~FILE://Users/steven/Code/retold/modules/utility/choreographic/source/Choreographic-Browser-Shim.js",
             "Path": "FILE://Users/steven/Code/retold/modules/utility/choreographic/source/Choreographic-Browser-Shim.js",
@@ -749,7 +898,7 @@
             }
         },
         "URI~CONTENT~FILE://Users/steven/Code/retold/modules/utility/choreographic/source/Choreographic-RunScheduled.js": {
-            "UUID": "5602c320-c273-48f0-b6a1-61a602506cea",
+            "UUID": "da43a611-ed57-41ba-b2bd-92581eba5ad2",
             "Type": "URI",
             "Hash": "URI~CONTENT~FILE://Users/steven/Code/retold/modules/utility/choreographic/source/Choreographic-RunScheduled.js",
             "Path": "FILE://Users/steven/Code/retold/modules/utility/choreographic/source/Choreographic-RunScheduled.js",
@@ -787,7 +936,7 @@
             }
         },
         "URI~CONTENT~FILE://Users/steven/Code/retold/modules/utility/choreographic/source/Choreographic.js": {
-            "UUID": "1057d6f4-2b20-44d5-a942-9051129b7506",
+            "UUID": "684eac39-f5d3-4372-a7df-c850dcefd051",
             "Type": "URI",
             "Hash": "URI~CONTENT~FILE://Users/steven/Code/retold/modules/utility/choreographic/source/Choreographic.js",
             "Path": "FILE://Users/steven/Code/retold/modules/utility/choreographic/source/Choreographic.js",
@@ -824,7 +973,7 @@
             }
         },
         "URI~CONTENT~FILE://Users/steven/Code/retold/modules/utility/choreographic/test/Choreographic_tests.js": {
-            "UUID": "da0d75e3-f810-444b-bcbb-ec76353a1d96",
+            "UUID": "39a5cf44-37b1-4bf9-b036-824ccec2deec",
             "Type": "URI",
             "Hash": "URI~CONTENT~FILE://Users/steven/Code/retold/modules/utility/choreographic/test/Choreographic_tests.js",
             "Path": "FILE://Users/steven/Code/retold/modules/utility/choreographic/test/Choreographic_tests.js",
