@@ -201,7 +201,7 @@ class Choreographic
 		let tmpTimeStampHash = (typeof(pTimeStampHash) == 'string') ? pTimeStampHash : 'Default';
 		let tmpMessage = (typeof(pMessage) !== 'undefined') ? pMessage : `Elapsed for ${tmpTimeStampHash}: `;
 		let tmpOperationTime = this.getTimeDelta(pTimeStampHash);
-		this.info(tmpMessage +' ('+tmpOperationTime+'ms)');
+		this.log.info(tmpMessage +' ('+tmpOperationTime+'ms)');
 		return tmpOperationTime;
 	}
 
@@ -408,7 +408,7 @@ class Choreographic
 		let tmpObjectPropertyKeys = Object.keys(pObject);
 		let tmpfEnumerationComplete = (typeof(fEnumerationComplete) == 'function') ? fEnumerationComplete : ()=>{};
 
-		libAsync.eachLimit(tmpObjectPropertyKeys, tmpParallelOperations,
+		this.fable.Utility.eachLimit(tmpObjectPropertyKeys, tmpParallelOperations,
 			(tmpKey, fOperationComplete) =>
 			{
 				return fProcessFunction(tmpKey, pObject[tmpKey], this, fOperationComplete);
@@ -420,10 +420,11 @@ class Choreographic
 		let tmpParallelOperations = (typeof(pParallelOperations) == 'number') ? pParallelOperations : 1;
 		let tmpfEnumerationComplete = (typeof(fEnumerationComplete) == 'function') ? fEnumerationComplete : ()=>{};
 
-		libAsync.eachLimit(pArray, tmpParallelOperations,
-			(tmpEntry, fOperationComplete) =>
+		let tmpIndexedEntries = pArray.map((pEntry, pIndex) => ({ Index: pIndex, Entry: pEntry }));
+		this.fable.Utility.eachLimit(tmpIndexedEntries, tmpParallelOperations,
+			(tmpIndexedEntry, fOperationComplete) =>
 			{
-				return fProcessFunction(tmpKey, tmpEntry, this, fOperationComplete);
+				return fProcessFunction(tmpIndexedEntry.Index, tmpIndexedEntry.Entry, this, fOperationComplete);
 			}, tmpfEnumerationComplete);
 	}
 	/*
