@@ -110,7 +110,7 @@ _ScriptHost.createTimeStamp('phase-one');
 _ScriptHost.logTimeDelta('phase-one', 'Phase one done');
 ```
 
-> **Note:** `logTimeDelta` emits its line through `this.info(...)`. The class does not define an `info` method (logging is on `this.log`), so calling `logTimeDelta` in the current release throws. Use `this.log.info(\`... (${_ScriptHost.getTimeDelta('phase-one')}ms)\`)` directly, or the progress-tracker helpers below, for elapsed-time logging.
+> **Note:** `logTimeDelta` logs the elapsed time via `this.log.info(...)` and returns the delta in milliseconds.
 
 ### logMemoryResourcesUsed()
 
@@ -249,7 +249,7 @@ _ScriptHost.enumerateObjectProperties(tmpRecords,
 
 Walk each entry of `pArray` with the same callback contract and defaults as above.
 
-> **Note:** Both enumeration helpers reference an `async` library internally that the current release does not import, so calling them throws a `ReferenceError`. Until that is resolved, iterate with `_ScriptHost.fable.Utility.eachLimit(pCollection, pLimit, fIteratee, fComplete)` instead -- it provides the same bounded-parallel iteration and is what the bundled debug harness uses.
+> **Note:** Both enumeration helpers run via `this.fable.Utility.eachLimit` for bounded-parallel iteration. `enumerateArrayEntries` passes the array index as the first argument to your process function. `_ScriptHost.fable.Utility.eachLimit(pCollection, pLimit, fIteratee, fComplete)` is also available directly.
 
 ## Fable Utility Access
 
