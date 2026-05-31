@@ -68,7 +68,80 @@ If you want the prefix to not be `ScriptHost`, it just uses the common `fable` s
 }
 ```
 
-# Documentation Yet to Write
+## Reading Common-Format Input Files
 
-* read common format files
-* write a file to the current rundata folder
+Choreographic itself does not ship dedicated CSV or text **parsers** -- the class exposes no `read*` methods. Input is handled with the tools you already have in a script host: Node's `fs` module (a reference is kept at `_ScriptHost._Dependencies.fs`) for loading file contents, and the [fable](https://github.com/fable-retold/fable) services hanging off `_ScriptHost.fable` for working through the rows.
+
+A common pattern is to read a file synchronously at the top of the script, split it into lines, and walk the rows with the bundled async helper so you can throttle parallelism and log progress as you go:
+
+```javascript
+const libFS = require('fs');
+const libChoreographic = require('choreographic');
+
+const _ScriptHost = new libChoreographic({ "Product": "ImportRecords" });
+
+// Read a line-delimited input file from disk.
+let tmpFileContents = libFS.readFileSync(`${process.cwd()}/input/records.csv`, 'utf8');
+let tmpRows = tmpFileContents.split('\n');
+
+_ScriptHost.createProgressTracker(tmpRows.length, 'Import');
+
+// fable.Utility.eachLimit walks the rows; here we process 4 at a time.
+_ScriptHost.fable.Utility.eachLimit(tmpRows, 4,
+	(pRow, fRowComplete) =>
+	{
+		_ScriptHost.incrementProgressTrackerStatus('Import', 1);
+		// ... do something with pRow ...
+		return fRowComplete();
+	},
+	(pError) =>
+	{
+		_ScriptHost.printProgressTrackerStatus('Import');
+		_ScriptHost.log.info('Import complete.');
+	});
+```
+
+The `_Dependencies.fs` handle exists so the same `fs` instance is reachable from anywhere you hold the script host, without re-requiring it.
+
+> **Note:** The "common format" framing here is read-by-convention, not a parser API. If you need structured CSV parsing (quoted fields, embedded delimiters), bring your own parser or a fable-provided service -- Choreographic only provides the run scaffolding, logging, and progress tracking around it.
+
+## Writing a File to the Current Rundata Folder
+
+Every run gets its own timestamped folder under `DataRoot` (see `settings.App.DataFolder`). The script host provides three helpers that write into that folder, so output from each run stays isolated alongside that run's log file.
+
+**Write an object as pretty-printed JSON:**
+
+```javascript
+_ScriptHost.writeFileToRunDataFolderFromObjectSync('anomalies.json', { Count: 20000, Records: tmpAnomalies });
+```
+
+Serializes the object with `JSON.stringify(pObject, null, 4)` and writes it (UTF-8) to `DataFolder/anomalies.json`.
+
+**Write a string verbatim:**
+
+```javascript
+_ScriptHost.writeFileToRunDataFolderSync('report.txt', 'Run finished with 3 warnings.\n');
+```
+
+Writes the string content as-is (UTF-8) to `DataFolder/report.txt`.
+
+**Write an array of lines (appending one row at a time):**
+
+```javascript
+_ScriptHost.writeTextFileFromArray('rows.csv', ['id,name', '1,Alice', '2,Bob']);
+```
+
+Appends each array entry followed by a newline (`\n`) to `DataFolder/rows.csv`. If the value passed is not an array, the helper logs an error via `_ScriptHost.log.error` and writes nothing.
+
+All three are synchronous and resolve filenames relative to the active run's `DataFolder` -- you pass only the file name, never a path. Because the folder is unique per run, re-running the script never clobbers a previous run's output.
+
+## Documentation
+
+Full documentation, including the script lifecycle and a complete API reference, is published at **[stevenvelozo.github.io/choreographic](https://stevenvelozo.github.io/choreographic/)**.
+
+- [Quick Start](docs/quickstart.md) -- install, write, and run your first script
+- [API Reference](docs/api.md) -- lifecycle, logging and telemetry, file writers, enumeration helpers
+
+## Related Modules
+
+- [fable](https://github.com/fable-retold/fable) -- the service dependency-injection framework that provides Choreographic's logging, configuration, and async utility services
