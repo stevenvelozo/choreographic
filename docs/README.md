@@ -2,7 +2,7 @@
 
 > Simple framework for single-run scripts.
 
-Choreographic is a lightweight host for the kind of one-off scripts you write all the time -- importing a batch of data, mutating a set of records, or exercising a list of endpoints. It wraps a [fable](https://github.com/fable-retold/fable) instance to give every script the same baseline: configuration, logging, a per-run log file, progress tracking, and a clean place to drop output.
+Choreographic is a lightweight host for the kind of one-off scripts you write all the time -- importing a batch of data, mutating a set of records, or exercising a list of endpoints. It wraps a [fable](https://fable-retold.github.io/fable/) instance to give every script the same baseline: configuration, logging, a per-run log file, progress tracking, and a clean place to drop output.
 
 The core idea is **run isolation**. Each time you execute the script, Choreographic creates a fresh timestamped folder for that run. The run's log and any files it writes land in that folder, so running the same script against QA, then staging, then production never tangles one run's output into another's.
 
@@ -58,4 +58,4 @@ From there your script uses `log` for output, the progress/timing helpers for in
 
 ## Related Modules
 
-- [fable](https://github.com/fable-retold/fable) -- the service dependency-injection framework that provides Choreographic's logging, configuration, and async utility services
+- [fable](https://fable-retold.github.io/fable/) -- the service dependency-injection framework that provides Choreographic's logging, configuration, and async utility services

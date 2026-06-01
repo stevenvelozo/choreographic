@@ -80,7 +80,7 @@ _ScriptHost.log.error('Something failed', { Error: tmpError });
 _ScriptHost.log.fatal('Unrecoverable');
 ```
 
-Refer to [fable](https://github.com/fable-retold/fable) for the complete logger API.
+Refer to [fable](https://fable-retold.github.io/fable/) for the complete logger API.
 
 ## Logging and Telemetry Helpers
 
@@ -220,7 +220,7 @@ _ScriptHost.writeTextFileFromArray('rows.csv', ['id,name', '1,Alice', '2,Bob']);
 
 ## Reading Input Files
 
-Choreographic does not expose `read*` methods or a CSV/text parser. To consume input, use Node's `fs` (a reference is available at `_ScriptHost._Dependencies.fs`) and iterate the data with [fable](https://github.com/fable-retold/fable)'s async utilities (see below). For structured CSV parsing, bring your own parser.
+Choreographic does not expose `read*` methods or a CSV/text parser. To consume input, use Node's `fs` (a reference is available at `_ScriptHost._Dependencies.fs`) and iterate the data with [fable](https://fable-retold.github.io/fable/)'s async utilities (see below). For structured CSV parsing, bring your own parser.
 
 ```javascript
 let tmpRows = libFS.readFileSync(`${process.cwd()}/input/records.csv`, 'utf8').split('\n');
@@ -278,8 +278,8 @@ _ScriptHost.fable.Utility.waterfall(
 	});
 ```
 
-See [fable](https://github.com/fable-retold/fable) for the full utility and service surface.
+See [fable](https://fable-retold.github.io/fable/) for the full utility and service surface.
 
 ## Related Modules
 
-- [fable](https://github.com/fable-retold/fable) -- the service dependency-injection framework that provides Choreographic's logging, configuration, and async utility services
+- [fable](https://fable-retold.github.io/fable/) -- the service dependency-injection framework that provides Choreographic's logging, configuration, and async utility services
