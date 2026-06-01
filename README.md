@@ -1,6 +1,6 @@
 # Choreographic
 
-> **[&#9654; Read the Choreographic Documentation](https://stevenvelozo.github.io/choreographic/)** &mdash; interactive docs with the full API reference.
+> **[Read the Choreographic Documentation](https://stevenvelozo.github.io/choreographic/)** - interactive docs with the full API reference.
 
 Prepackaged application services and behaviors for single-run scripts.  Services provided by fable.  The key elements:
 
